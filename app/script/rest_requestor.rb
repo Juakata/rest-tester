@@ -1,5 +1,11 @@
 require 'rest-client'
-url = gets.chomp
-url = "http://localhost:3000/users" if url==''
+url = "http://localhost:3000/users"
 
-puts RestClient.get(url)
+=begin
+ puts RestClient.get(url)
+puts RestClient.get(url + "/new")
+puts RestClient.get(url + "/edit/" + 5)
+puts RestClient.get(url + "/show/" + 5)
+=end
+
+RestClient.post(url ,"")
